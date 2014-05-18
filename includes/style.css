@@ -1,0 +1,64 @@
+﻿.overlay {
+	position:absolute;
+    border: 1px solid red;
+    background: #dff;
+    margin: -1px;
+    z-index: -1;
+}
+p {
+	width: 250px;
+    margin: 24px 65px;
+}
+p.span {
+	font-weight: bold;
+}
+.animate {
+    position: relative;
+    display: block;
+    /* Position this element behind the header so it looks like
+    it's fading into view from the very top.
+    */
+
+
+    animation: ImageLogoSlideIn 5s ease 0 normal;
+    -moz-animation: ImageLogoSlideIn 5s ease 0 normal;
+    -o-animation: ImageLogoSlideIn 5s ease 0 normal;
+    -webkit-animation: ImageLogoSlideIn 5s ease 0 normal;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+@-moz-keyframes ImageLogoSlideIn {
+    from {
+        top: -150px;
+    }
+
+    to {
+        top: 150px;
+    }
+}
+@-webkit-keyframes ImageLogoSlideIn {
+    from {
+        top: -150px;
+    }
+
+    to {
+        top: 150px;
+    }
+}
+@keyframes ImageLogoSlideIn {
+    from {
+        top: -150px;
+        opacity: 0.0;
+    }
+
+    to {
+        top: 150px;
+        opacity: 1.0;
+    }
+}
+.normal {
+     position: relative;
+        display: block;
+        margin: auto;
+    margin-top: 150px;
+}
